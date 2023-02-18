@@ -1,0 +1,129 @@
+$color_1: #fff;
+$color_2: rgb(100, 100, 100);
+$background-color_1: #55acee;
+$background-color_2: #3b5998;
+$background-color_3: #0077b5;
+$background-color_4: transparent;
+
+/* Footer =============================================*/
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // Small devices (landscape phones, 576px and up) */
+/* // Medium devices (tablets, 768px and up) */
+/* // Large devices (desktops, 992px and up) */
+/* // Extra large devices (large desktops, 1200px and up) */
+.icon-f {
+	width: 43px;
+	height: 32px;
+	text-align: center;
+	color: $color_1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+}
+.twit {
+	background-color: $background-color_1;
+}
+.face {
+	background-color: $background-color_2;
+}
+.linkedin {
+	background-color: $background-color_3;
+}
+.footer-title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 1.84;
+	font-weight: 500;
+}
+footer {
+	li {
+		line-height: 2;
+	}
+	small {
+		font-size: 85%;
+	}
+	.pdn--vl {
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+}
+.pdn--vm {
+	padding-top: 21px;
+	padding-bottom: 21px;
+}
+.copy-mo {
+	text-align: left;
+}
+.pay-method {
+	font-size: 32px;
+	color: $color_2;
+}
+@media (max-width: 575.98px) {
+	.list-with-icons {
+		order: 2;
+	}
+	.btn-default {
+		margin-top: 12px;
+	}
+	.section-title {
+		h3 {
+			font-size: 24px;
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.btn-default {
+		margin-top: 12px;
+	}
+	.last-footer {
+		text-align: center;
+	}
+	.copy-mo {
+		text-align: center;
+	}
+}
+@media (max-width: 767.98px) {
+	.last-footer {
+		text-align: center;
+	}
+	.copy-mo {
+		text-align: center;
+	}
+	.mobile-login {
+		margin-right: auto;
+	}
+	.navbar {
+		>.container-fluid {
+			justify-content: start;
+		}
+	}
+	.logo-wp {
+		display: none;
+	}
+	.search-project {
+		display: none !important;
+	}
+	.search-field {
+		background-color: $background-color_4;
+		text-align: center;
+		display: block;
+		height: 60px;
+		overflow: visible;
+	}
+	.start-project {
+		margin: auto;
+	}
+	.logo-mobile {
+		width: 40px;
+	}
+}
+@media (min-width: 768px) {
+	.mobile-login {
+		display: none;
+	}
+	.logo-mobile {
+		display: none;
+	}
+}
