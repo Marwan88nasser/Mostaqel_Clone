@@ -129,15 +129,6 @@ h2 {
 		background-color: $background-color_2;
 	}
 }
-.form-control {
-	padding: 9px 10px;
-	display: block;
-	font-size: 14px;
-	line-height: 1.42857;
-	color: $color_3;
-	border: 1px solid #ccc;
-	background-color: $background-color_2;
-}
 output {
 	display: block;
 	font-size: 14px;
@@ -161,22 +152,7 @@ label {
 	font-family: $font-family_3;
 	font-size: 14px;
 }
-form {
-	input {
-		&:focus {
-			border: 1px solid #ddd;
-		}
-		&:active {
-			border: 1px solid #ddd;
-		}
-	}
-	.form-control {
-		&:focus {
-			border: 1px solid #ddd;
-		}
-	}
-}
-.btn-primary {
+.primary-btn {
 	color: $color_1;
 	background-color: $background-color_5;
 	border-color: $border-color_1;
@@ -255,12 +231,6 @@ input {
 	}
 }
 .nav {
-	font-family: $font-family_2;
-	font-size: 14px;
-	font-family: $font-family_3;
-	font-size: 14px;
-}
-.btn {
 	font-family: $font-family_2;
 	font-size: 14px;
 	font-family: $font-family_3;
@@ -557,22 +527,6 @@ h4 {
 .pdn--as {
 	padding: 14px;
 	padding: 14px;
-}
-h1 {
-	font-family: $font-family_3;
-	line-height: 1.84;
-}
-h3 {
-	font-family: $font-family_3;
-	line-height: 1.84;
-}
-h5 {
-	font-family: $font-family_3;
-	line-height: 1.84;
-}
-h6 {
-	font-family: $font-family_3;
-	line-height: 1.84;
 }
 .home-page {
 	h4 {

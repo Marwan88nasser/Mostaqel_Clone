@@ -18,3 +18,138 @@
 .btn-default:hover {
   background-color: rgb(233, 233, 233) !important;
 }
+
+.btn-group {
+  .btn-drop {
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 0px;
+    background-color: $main-color-dark;
+    border-color: $main-color-dark;
+    i,
+    svg {
+      &.mb {
+        margin-bottom: 2px;
+      }
+      &.ml {
+        margin-left: 3px;
+      }
+    }
+    &:hover {
+      background-color: $main-color;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.dropdown-menu {
+  > li {
+    > a {
+      font-family: "Noto Kufi Arabic";
+      font-size: 12px;
+      i,
+      svg {
+        margin-left: 1px;
+      }
+    }
+  }
+}
+
+.nav-project {
+  border: none;
+  .nav-item {
+    .nav-link {
+      border-radius: 0;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Noto Kufi Arabic";
+      color: #222;
+      padding: 13px 25px;
+      i,
+      svg {
+        font-size: 13px;
+      }
+      &.active {
+        background-color: $white-color;
+        &:hover {
+          color: $black-color;
+        }
+      }
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+.tab-project {
+  .project-content {
+    background-color: $white-color;
+    padding: 25px;
+    .img-holder {
+      width: 100%;
+      min-height: 300px;
+      max-height: 500px;
+      margin-bottom: 30px;
+      .project-image {
+        @include full-w-h;
+      }
+    }
+  }
+}
+
+.btn-options {
+  .dropdown-toggle {
+    border: 1px solid #f1f1f1;
+    border-radius: 0px;
+    font-size: 13px;
+    background-color: #f1f1f1;
+    padding: 6px 15px;
+    color: $black-color;
+    transition: $sm-transition;
+    i,
+    svg {
+      font-size: 11px;
+      &.arrow {
+        margin-bottom: 2px;
+        margin-right: 4px;
+      }
+    }
+    &:hover {
+      border-color: #dae0e5;
+      background-color: #dae0e5;
+    }
+    &:focus {
+      background-color: #dae0e5;
+      box-shadow: none;
+    }
+  }
+}
+
+.btn-social {
+  @include flex-center;
+  gap: 7px;
+  padding: 5px 12px;
+  font-weight: 500;
+  font-size: 13px;
+  box-shadow: 0px 0px 5px 0 rgb(0 0 0 / 18%);
+  text-transform: capitalize;
+
+  &.bg-li,
+  &.bg-fac,
+  &.bg-tw {
+    color: $white-color;
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+  &.bg-li {
+    background-color: #0a66c2;
+  }
+  &.bg-fac {
+    background-color: #1877f2;
+  }
+  &.bg-tw {
+    background-color: #1da1f2;
+  }
+}

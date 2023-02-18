@@ -1,0 +1,159 @@
+.breadcrumb-box {
+  .breadcrumb {
+    .breadcrumb-item {
+      &::before {
+        padding: 0 5px;
+        color: #77869b;
+      }
+      a {
+        color: #77869b;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+          color: #8ea0b9;
+        }
+      }
+      &.active {
+        color: #6a6c70;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.info-project {
+  @include flex-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  .name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 0;
+  }
+}
+
+.text-content {
+  .title {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  .des {
+    color: #707070;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .point-write {
+    margin-bottom: 20px;
+    .title {
+      color: #666;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+    .des {
+      color: #707070;
+      font-size: 12px;
+      line-height: 23px;
+    }
+  }
+}
+
+.box-img {
+  cursor: pointer;
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  .img {
+    @include cover-w-h;
+  }
+}
+
+.box-rate {
+  .title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: $main-color;
+  }
+  .rate-holder {
+    @include flex-between;
+    margin-bottom: 13px;
+    .rate {
+      color: #707070;
+      margin-bottom: 0px;
+    }
+    .star-holder {
+      @include flex-between;
+      justify-content: flex-end;
+      gap: 5px;
+      i,
+      svg {
+        &.colored {
+          color: #fa9747;
+        }
+      }
+    }
+  }
+}
+
+.owner-box {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .cont {
+    @include flex-between;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    .box-info {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: 10px;
+      .holder {
+        @include circle(60px, 60px);
+        .user-img {
+          @include cover-w-h;
+          border-radius: 50%;
+        }
+      }
+      .info {
+        .name {
+          font-weight: 500;
+          font-size: 12px;
+          margin-bottom: 7px;
+          display: block
+        }
+        .data {
+          @include flex-center;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          gap: 10px;
+          .icon {
+            font-size: 11px;
+            i, svg {
+              font-size: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .text-content {
+    font-size: 12px;
+  }
+  &.vendor {
+    .cont {
+      justify-content: flex-start;
+      .holder-icon {
+        margin-left: 65px;
+        transform: translate(-55px, -15px);
+      }
+      .box-info {
+        flex: 1;
+      }
+    }
+    .text-content {
+      margin-right: 105px;
+    }
+  }
+}
